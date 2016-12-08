@@ -31,5 +31,5 @@ WORKDIR /tmp
 RUN mv /usr/bin/app/build/libs/eureka-server.jar /tmp/app.jar
 
 RUN /bin/bash -c 'touch /tmp/app.jar'
-EXPOSE 8081
+EXPOSE 8761
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/tmp/app.jar"]
