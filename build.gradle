@@ -15,7 +15,7 @@ apply plugin: 'spring-boot'
 apply plugin: 'idea'
 
 jar {
-    baseName = 'eureka'
+    baseName = 'eureka-server'
 }
 
 sourceCompatibility = 1.8

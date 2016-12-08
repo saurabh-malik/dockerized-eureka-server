@@ -28,7 +28,7 @@ RUN cd build/libs \ && ls
 WORKDIR /tmp
 
 # Move the build jar to tmp folder
-RUN mv /usr/bin/app/build/libs/dockerized-microservice.jar /tmp/app.jar
+RUN mv /usr/bin/app/build/libs/eureka-server.jar /tmp/app.jar
 
 RUN /bin/bash -c 'touch /tmp/app.jar'
 EXPOSE 8081
