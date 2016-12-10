@@ -1,6 +1,8 @@
 spring:
   application:
     name: eureka
+  profiles:
+    active: docker
   cloud:
     config:
       uri: ${CONFIG_SERVER_URL:http://localhost:8888}
