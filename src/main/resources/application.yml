@@ -1,7 +1,5 @@
 server:
   port: 8761
-spring:
-  profiles: cloud
 eureka:
   client:
     registerWithEureka: false
