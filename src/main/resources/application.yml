@@ -7,6 +7,10 @@ eureka:
   server:
     waitTimeInMsWhenSyncEmpty: 0
 
+spring:
+  profiles:
+    active: docker
+
 ---
 # Eureka instance  when used on Docker
 spring:
@@ -14,6 +18,9 @@ spring:
 eureka:
   instance:
     hostname: dockerized-eureka-server
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
 
 ---
 # Eureka instance  when used local
